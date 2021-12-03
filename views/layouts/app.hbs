@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>jsFrameLogic</title>
+    <script type="text/javascript" src='/jquery'></script>
+    <script type="module" src='/app/js/index.js'></script>
+    <link rel="stylesheet" href='/app/css/reset.css'/>
+    <link rel="stylesheet" href="/app/css/main.css">
+  </head>
+  <body class='flex col'>
+    {{>menu}}
+    <iframe id='pageContent' class='grow'></iframe>
+    <iframe id='prompt' class='grow overpane'></iframe>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+.tabs {
+  border-bottom: 1px solid black;
+}
+
+.tabs p {
+  border-bottom: 1px solid none;
+}
+
+.editorpanel {
+  background: #AAA;
+}
+
+.editorpanel > canvas, .editorpanel > svg {
+  position: absolute;
+}
+
+.frames {
+  width: 620px;
+}
+
+.frames > .content {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+.frames > .content canvas {
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.frames > .content canvas:hover {
+  border: 1px solid white;
+}
+
+#editor .editorpanel {
+  transform-origin: top left;
+}
+
+.interface {
+  width: 300px;
+}

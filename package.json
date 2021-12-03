@@ -1,0 +1,30 @@
+{
+  "name": "jsframelogic",
+  "version": "1.0.0",
+  "description": "game creation tool for mapping logical zones onto sprite frames",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PressingButtons/jsFrameStudio.git"
+  },
+  "keywords": [
+    "framelogic",
+    "jsframelogic"
+  ],
+  "author": "Steven Boyd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PressingButtons/jsFrameStudio/issues"
+  },
+  "homepage": "https://github.com/PressingButtons/jsFrameStudio#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "jquery": "^3.6.0"
+  }
+}

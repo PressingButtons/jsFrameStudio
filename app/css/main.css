@@ -1,0 +1,111 @@
+:root {
+  --border: 1px solid rgba(0, 0, 0, 0.6);
+  --bgColor: #333;
+  --bgForm: #EEE;
+  --headerBG: #333;
+  --overpaneBG: rgba(0, 0, 0, 0.4);
+  --fontRegular: #99B;
+  --fontHeader: #9B9;
+  --fontImportant: #B99;
+  --fontForm: #333;
+}
+
+body, html, .overpane {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: var(--bgColor);
+  color: var(--fontRegular);
+}
+
+body.prompt {
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+div {
+  min-width: 0;
+  min-height: 0;
+  position: relative;
+}
+
+form {
+  width: 500px;
+}
+
+form > * {
+  margin: 6px;
+}
+
+iframe#pageContent {
+  background: grey;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 6px;
+}
+
+.flex, form {display: flex;}
+.col, form {flex-flow: column nowrap;}
+.grow {flex:1;}
+.scrollable {overflow: auto;}
+.margined > * {margin: 6px;}
+
+.main.menu .dropdown {
+  background: var(--bgColor);
+}
+
+.dropdown > .content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background: inherit;
+}
+
+.dropdown.show > .content {
+  display: block;
+  background: inherit
+}
+
+.dropdown.show > .content p:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  color: var(--fontHeader);
+  background: var(--headerBG);
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.overpane {
+  z-index: 1;
+  position: absolute;
+  background: var(--overpaneBG);
+  display: none;
+}
+
+.overpane.show {
+  display: block;
+}
+
+.menu > * {
+  cursor: pointer;
+}
+
+.prompt > form {
+  background: var(--bgForm);
+  color: var(--fontForm);
+  padding: 6px;
+}
+
+.content {
+  overflow: auto;
+}
